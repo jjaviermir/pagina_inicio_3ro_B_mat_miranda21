@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miranda Studios - Luxury Cars</title>
+    
+    <!-- Fuentes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <header class="main-header">
+        <div class="header-left">
+            <button class="menu-toggle-btn" aria-label="Menú">
+                <span class="hamburger-icon"></span>
+                <span class="menu-text">MENÚ</span>
+            </button>
+        </div>
+
+        <div class="header-center">
+            <a href="#" class="brand-logo">
+                <img src="img/logo.png" alt="Miranda Studios Logo" class="logo-img">
+            </a>
+        </div>
+
+        <div class="header-right">
+            <button class="icon-btn" aria-label="Chat">💬</button>
+            <button class="icon-btn" aria-label="Buscar">
+                <img src="img/search.png" alt="Buscar" class="search-icon-img">
+            </button>
+        </div>
+    </header>
+
+    <!-- 1ª SECCIÓN: HERO (URUS AT ITS PEAK) -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text-block animate-hero-text">
+                <p class="hero-subtitle">URUS SE PERFORMANTE</p>
+                <h1 class="hero-title">URUS AT ITS PEAK</h1>
+            </div>
+            
+            <div class="hero-actions animate-hero-btn">
+                <a href="#" class="btn-gold-hero">EXPLORAR EL MODELO &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BARRA LEGAL DEBAJO DEL HERO -->
+    <div class="top-disclaimer-bar">
+        El vehículo todavía no está en venta y, por lo tanto, no está sujeto a la Directiva 1999/94/CE. Consumo y emisiones en proceso de homologación
+    </div>
+
+    <!-- 2ª SECCIÓN: MODELOS (CARRUSEL BLANCO) -->
+    <section class="models-carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-top-bar">
+                <h2 class="carousel-main-title">MODELOS</h2>
+                <a href="#" class="discover-all-link">DESCUBRIR TODOS LOS MODELOS <span class="arrow">&rarr;</span></a>
+            </div>
+
+            <div class="carousel-main-display">
+                <button class="carousel-nav-btn prev-btn" id="carousel-prev-btn">&lsaquo;</button>
+                
+                <div class="carousel-stage">
+                    <div class="model-badge" id="carousel-badge">URUS</div>
+                    <h3 class="model-hero-title" id="carousel-title">URUS AT ITS PEAK</h3>
+                    
+                    <div class="carousel-track">
+                        <div class="carousel-card side-card prev-card">
+                            <img id="img-prev" src="img/revuelto-carousel.png" alt="Modelo Anterior">
+                        </div>
+                        <div class="carousel-card main-card">
+                            <img id="img-main" src="img/urus-carousel.png" alt="Modelo Central">
+                        </div>
+                        <div class="carousel-card side-card next-card">
+                            <img id="img-next" src="img/temerario-carousel.png" alt="Modelo Siguiente">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-nav-btn next-btn" id="carousel-next-btn">&rsaquo;</button>
+            </div>
+
+            <div class="model-tabs-selector" id="carousel-tabs">
+                <button class="tab-btn active">URUS SE PERFORMANTE</button>
+                <button class="tab-btn">URUS SE</button>
+            </div>
+
+            <div class="model-action-actions">
+                <a href="#" class="action-btn-gold">EXPLORAR EL MODELO <span class="arrow">&rarr;</span></a>
+                <a href="#" class="action-btn-outline">INICIAR CONFIGURACIÓN <span>⚙</span></a>
+                <a href="#" class="action-btn-outline-no-border">SOLICITAR INFORMACIÓN <span>✉</span></a>
+            </div>
+
+            <div class="carousel-legal-footer">
+                <p id="carousel-legal">
+                    Urus SE, Urus SE Performante: Consumo de energía (combinado): 21,4 kWh/100 Km más 5,7 l/100km; Emisiones de CO2 combinadas: 140 g/km; Clase de eficiencia de CO2 en ciclo combinado: E; Consumo de combustible con la batería descargada en ciclo combinado: 12,9 l/100km; Clase de CO2 con batería descargada: G; Urus SE Performante: En proceso de aprobación, no disponible para la venta.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3ª SECCIÓN: DEALER LOCATOR -->
+    <section class="dealer-banner-section">
+        <div class="dealer-banner-content">
+            <h2>DEALER LOCATOR</h2>
+            <a href="#" class="btn-white-dealer">ENCUENTRE UN CONCESIONARIO &rarr;</a>
+        </div>
+    </section>
+
+    <!-- 4ª SECCIÓN: CONFIGURA TU MODELO (URUS AMARILLO) -->
+    <section class="configurator-section">
+        <div class="configurator-container">
+            <div class="configurator-info">
+                <p class="config-subtitle">CONFIGURA TU</p>
+                <h2 class="config-title">URUS SE<br>PERFORMANTE</h2>
+                <div class="config-buttons">
+                    <a href="#" class="btn-gold-config">INICIAR CONFIGURACIÓN &rarr;</a>
+                    <a href="#" class="btn-outline-config">SOLICITAR INFORMACIÓN ✉</a>
+                </div>
+            </div>
+            <div class="configurator-image">
+                <img src="img/urus-yellow.png" alt="Urus SE Performante Frontal">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5ª SECCIÓN: NEWS LAMBORGHINI WORLD -->
+    <section class="news-section">
+        <div class="news-container">
+            <div class="news-header">
+                <h2 class="news-main-title">NEWS LAMBORGHINI WORLD</h2>
+                <a href="#" class="news-read-more">SEGUIR LEYENDO <span class="arrow">&rarr;</span></a>
+            </div>
+
+            <!-- Noticia Principal Destacada -->
+            <article class="news-card">
+                <div class="news-image-wrapper">
+                    <img src="img/temerario-carousel.png" alt="Temerario Ad Personam" class="news-image">
+                </div>
+                
+                <div class="news-content">
+                    <span class="news-badge">TEMERARIO</span>
+                    <p class="news-date">15 JULIO 2026</p>
+                    <h3 class="news-title">TEMERARIO AD PERSONAM: SPORTINESS MEETS ITALIAN TAILORING</h3>
+                    <p class="news-legal-text">
+                        Consumo energético (combinado ponderado): 4,3 kWh/100 Km más 11,2 l/100km; Emisiones de CO2 (combinadas ponderadas): 272 g/km; Clase de eficiencia de emisiones de CO2 (combinadas ponderadas): G; Clase de CO2 con batería descargada: G; Consumo de combustible (combinado) con batería descargada: 14 l/100km
+                    </p>
+                </div>
+            </article>
+
+            <!-- Cuadrícula de 3 Noticias Secundarias -->
+            <div class="news-grid">
+                
+                <!-- Tarjeta 1 -->
+                <article class="news-grid-card">
+                    <div class="grid-image-wrapper">
+                        <img src="img/evolution.png" alt="Evolution, Accelerated" class="grid-image">
+                    </div>
+                    <div class="grid-card-content">
+                        <p class="news-date">10 JULIO 2026</p>
+                        <h4 class="grid-news-title">EVOLUTION, ACCELERATED.</h4>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="news-grid-card">
+                    <div class="grid-image-wrapper">
+                        <img src="img/vision.png" alt="Lamborghini x Apple Vision Pro" class="grid-image">
+                    </div>
+                    <div class="grid-card-content">
+                        <span class="news-badge">EMPRESA</span>
+                        <p class="news-date">7 JULIO 2026</p>
+                        <h4 class="grid-news-title">LAMBORGHINI X APPLE VISION PRO</h4>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="news-grid-card">
+                    <div class="grid-image-wrapper">
+                        <img src="img/supersuv.png" alt="Lamborghini Urus SE Performante" class="grid-image">
+                    </div>
+                    <div class="grid-card-content">
+                        <span class="news-badge">URUS</span>
+                        <p class="news-date">1 JULIO 2026</p>
+                        <h4 class="grid-news-title">LAMBORGHINI URUS SE PERFORMANTE: THE SUPER SUV AT ITS PEAK</h4>
+                        <p class="news-legal-text grid-legal">
+                            Fenomeno: En proceso de aprobación, no disponible para la venta. Revuelto: Consumo de energía (combinado): 4,7 kWh/100 Km más 15,1 l/100km; Emisiones de CO2 combinadas: 350 g/km; Clase de eficiencia de CO2 en ciclo combinado: G.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Miranda Studios S.p.A. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

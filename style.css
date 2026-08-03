@@ -1,3 +1,6 @@
+/* =========================================
+   RESETEO GENERAL Y ESTILOS BASE
+   ========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -30,13 +33,9 @@ a {
     }
 }
 
-@keyframes pulseGlow {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.02); }
-    100% { transform: scale(1); }
-}
-
-/* HEADER Y NAVEGACIÓN */
+/* =========================================
+   HEADER Y NAVEGACIÓN
+   ========================================= */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -131,7 +130,9 @@ a {
     transform: scale(1.2);
 }
 
-/* 1ª SECCIÓN: HERO */
+/* =========================================
+   1ª SECCIÓN: HERO (URUS AT ITS PEAK)
+   ========================================= */
 .hero-section {
     position: relative;
     width: 100%;
@@ -176,7 +177,7 @@ a {
     line-height: 1;
 }
 
-/* BOTÓN CON EFECTO DE BRILLO DORADO (SHIMMER) */
+/* BOTONES DORADOS CON EFECTO SHIMMER */
 .btn-gold-hero, .btn-gold-config, .action-btn-gold {
     position: relative;
     background-color: #ffc107;
@@ -212,7 +213,7 @@ a {
     box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
 }
 
-/* BARRA LEGAL */
+/* BARRA LEGAL DEBAJO DEL HERO */
 .top-disclaimer-bar {
     background-color: #000000;
     color: #ffffff;
@@ -223,7 +224,9 @@ a {
     border-bottom: 1px solid #1a1a1a;
 }
 
-/* 2ª SECCIÓN: MODELOS (CARRUSEL BLANCO) */
+/* =========================================
+   2ª SECCIÓN: MODELOS (CARRUSEL BLANCO)
+   ========================================= */
 .models-carousel-section {
     background-color: #ffffff;
     color: #000000;
@@ -454,7 +457,9 @@ a {
     line-height: 1.6;
 }
 
-/* 3ª SECCIÓN: DEALER LOCATOR BANNER */
+/* =========================================
+   3ª SECCIÓN: DEALER LOCATOR BANNER
+   ========================================= */
 .dealer-banner-section {
     width: 100%;
     height: 250px;
@@ -496,7 +501,9 @@ a {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
-/* 4ª SECCIÓN: CONFIGURADOR */
+/* =========================================
+   4ª SECCIÓN: CONFIGURADOR (URUS AMARILLO)
+   ========================================= */
 .configurator-section {
     background-color: #121212;
     padding: 80px 100px;
@@ -555,7 +562,9 @@ a {
     transform: scale(1.05) rotate(-1deg);
 }
 
-/* 5ª SECCIÓN: NEWS LAMBORGHINI WORLD */
+/* =========================================
+   5ª SECCIÓN: NEWS LAMBORGHINI WORLD
+   ========================================= */
 .news-section {
     background-color: #ffffff;
     color: #000000;
@@ -598,7 +607,6 @@ a {
     border-color: #8f730d;
 }
 
-/* TARJETA PRINCIPAL DE NOTICIAS */
 .news-card {
     width: 100%;
     cursor: pointer;
@@ -671,7 +679,6 @@ a {
     max-width: 1100px;
 }
 
-/* GRID DE 3 NOTICIAS SECUNDARIAS */
 .news-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -731,14 +738,92 @@ a {
     color: #777777;
 }
 
-/* RESPONSIVO */
+/* =========================================
+   6ª SECCIÓN: REPRODUCTOR DE VIDEO EMBEBIDO
+   ========================================= */
+.video-section-container {
+    background-color: #000000;
+    padding: 80px 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.video-header-text {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.video-tag {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #ffc107;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.video-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.video-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cccccc;
+    font-weight: 300;
+}
+
+.video-player-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #222222;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+    background-color: #0a0a0a;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.main-video-player {
+    width: 100%;
+    height: auto;
+    display: block;
+    outline: none;
+}
+
+/* =========================================
+   RESPONSIVO
+   ========================================= */
 @media (max-width: 900px) {
     .news-grid {
         grid-template-columns: 1fr;
     }
+    
+    .video-title {
+        font-size: 36px;
+    }
+
+    .configurator-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .config-buttons {
+        justify-content: center;
+    }
 }
 
-/* FOOTER */
+/* =========================================
+   FOOTER
+   ========================================= */
 .main-footer {
     background-color: #000000;
     color: #777777;
